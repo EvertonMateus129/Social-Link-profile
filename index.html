@@ -12,13 +12,130 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Social links profile</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      :root {
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --grey_700: hsl(0, 0%, 20%);
+        --grey_800: hsl(0, 0%, 12%);
+        --grey_900: hsl(0, 0%, 8%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--grey_900);
+        height: 100vh;
+        font-family: "Inter";
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        background-color: var(--grey_700);
+        padding: 3.6rem;
+        border-radius: 15px;
+      }
+
+      .personal-infos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2.4rem; 
+      }
+
+      .personal-name-loc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 2.4rem;
+      }
+
+      .personal-infos h1 {
+        margin-top: 2.4rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .personal-infos h3 {
+        margin: 0;
+        color: var(--green);
+        font-weight: 700;
+      }
+
+      .personal-profile {
+        width: 7rem;
+        border-radius: 50%;
+      }
+
+      .personal-details {
+        font-size: 1.2rem;
+        color: var(--white);
+        font-weight: 400;
+      }
+
+      .personal-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 1.6rem;
+        
+      }
+
+      .personal-links a {
+        display: block;
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--grey_800);
+        width: 100%;
+        padding: 1.2rem;
+        border-radius: .8rem;
+        font-weight: 700;
+
+        transition: all .5s;
+      }
+
+      .personal-links a:hover {
+        background-color: var(--green);
+        color: var(--grey_700);
+      }
+
+
+
       .attribution {
         font-size: 0.6875rem;
         text-align: center;
+        position: fixed;
+        bottom: 0;
+        color: var(--white);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -28,26 +145,35 @@
   <body>
     <main class="container">
       <div class="personal-infos">
-        <img src="./assets/images/IMG_20250906_122655_310.jpg" alt="Profile picture"/>
-        <h1 class="personal-name">Everton Mateus</h1>
-        <h3 class="personal-location">Jundiaí, São Paulo</h3>
-        <span>"Frontend developer from Brazil.</span>
+        <img
+          src="./assets/images/IMG_20250906_122655_310.jpg"
+          alt="Profile picture"
+          class="personal-profile"
+        />
+        <div class="personal-name-loc">
+          <h1 class="personal-name">Everton Mateus</h1>
+          <h3 class="personal-location">Jundiaí, São Paulo</h3>
+        </div>
+        <span class="personal-details">Frontend developer from Brazil.</span>
       </div>
 
       <div class="personal-links">
-        <a href="https://github.com/EvertonMateus129">Github</a>
-        <a href="https://www.frontendmentor.io/profile/EvertonMateus129">Frontend Mentor</a>
-        <a href="https://www.linkedin.com/in/everton-mateus-3601692b7">LinkedIn</a>
+        <a href="https://github.com/EvertonMateus129">GitHub</a>
+        <a href="https://www.frontendmentor.io/profile/EvertonMateus129"
+          >Frontend Mentor</a
+        >
+        <a href="https://www.linkedin.com/in/everton-mateus-3601692b7"
+          >LinkedIn</a
+        >
         <a href="#">Twitter</a>
         <a href="#">Instagram</a>
       </div>
-
     </main>
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/EvertonMateus129">Everton Mateus</a>.
     </footer>
   </body>
 </html>
