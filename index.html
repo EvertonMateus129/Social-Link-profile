@@ -84,7 +84,7 @@
 
       .personal-infos h3 {
         margin: 0;
-        color: var(--green);
+        color: #4169E1;
         font-weight: 700;
       }
 
@@ -124,8 +124,8 @@
       }
 
       .personal-links a:hover {
-        background-color: var(--green);
-        color: var(--grey_700);
+        background-color: #4169E1;
+        color: var(--white);
       }
 
 
@@ -136,10 +136,27 @@
         position: fixed;
         bottom: 0;
         color: var(--white);
+        font-size: 1.2rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+
+      @media (min-width: 375px) {
+        .attribution {
+          font-size: 1rem;
+          padding-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 1440px) {
+        .attribution {
+          font-size: 1.4rem;
+          padding-bottom: 10px;
+        }
+      }
+
     </style>
   </head>
   <body>
